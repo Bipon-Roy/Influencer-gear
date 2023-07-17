@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600;700&family=Lato:wght@400;700&family=Open+Sans:wght@400;700;800&family=Poppins:wght@400;500;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #fff;
+}
+/* shared styles */
+.btn-primary {
+    border-radius: 41px;
+    background: #e02c6d;
+    padding: 10px 24px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+}
+.btn-icon {
+    margin-left: 10px;
+}
+.nav-section,
+.banner-container {
+    max-width: 1340px;
+    margin: 0 auto;
+}
+.main-text {
+    color: #3a3a3a;
+}
+
+/* Navbar */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+.link-container ul {
+    display: flex;
+}
+.nav-link {
+    list-style-type: none;
+}
+.link-container a {
+    text-decoration: none;
+    margin-right: 2rem;
+    color: #3a3a3a;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.nav-icon {
+    color: #3a3a3a;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-right: 2rem;
+}
+.nav-heading {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* Banner */
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-content {
+    width: 540px;
+}
+.banner-heading {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.banner-description {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1.8rem;
+}
+.banner-img {
+    background: url("./images/Circle\ design.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 2rem;
+}
+/* Responsive Header */
+
+/* Mobile Devices */
+@media screen and (max-width: 576px) {
+    .nav-container,
+    .banner-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .link-container {
+        display: none;
+    }
+    .banner-content {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .banner-heading {
+        font-size: 2rem;
+    }
+    .banner-img {
+        margin: 1.5rem 2rem;
+    }
+    .hero-img {
+        width: 100%;
+    }
+}
+
+/* tablet or medium Devices */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .nav-link {
+        display: none;
+    }
+    .nav-heading {
+        font-size: 1.5rem;
+        margin-left: 1.5rem;
+    }
+    .banner-content {
+        width: 100%;
+        margin-left: 1.5rem;
+    }
+    .banner-heading {
+        font-size: 2rem;
+    }
+    .banner-description {
+        font-size: 1rem;
+    }
+    .hero-img {
+        width: 100%;
+    }
+}
